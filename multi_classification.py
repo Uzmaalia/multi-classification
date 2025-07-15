@@ -35,7 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.25, random
 
 from sklearn.linear_model import LogisticRegression
 
-clf = LogisticRegression(multi_class='ovr')
+clf = LogisticRegression(multi_class='auto')
 
 clf.fit(X_test, y_test)
 
